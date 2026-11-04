@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101820">
+  <meta name="description" content="Навайбкодил — каталог независимых цифровых проектов, игр и миров.">
+  <title>Навайбкодил — каталог проектов</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#catalog">Перейти к каталогу</a>
+
+  <header class="site-header" id="top">
+    <div class="utility-bar">
+      <div class="shell utility-inner">
+        <p><span class="status-dot" aria-hidden="true"></span>Независимые проекты. Живые идеи.</p>
+        <a href="mailto:hello@navaibcodil.catalog">hello@navaibcodil.catalog</a>
+      </div>
+    </div>
+    <div class="shell nav-inner">
+      <a class="brand" href="#top" aria-label="Навайбкодил — на главную">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <path d="M6 33V7h7v10h14V7h7v26h-7V24H13v9H6Z" fill="currentColor"/>
+          <path d="M27 7h7v10h-7z" fill="#c8ecff"/>
+        </svg>
+        <span>Навайбкодил</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Основная навигация">
+        <a class="nav-link active" href="#top">Главная</a>
+        <a class="nav-link" href="#catalog">Каталог</a>
+        <a class="nav-link" href="#collections">Подборки</a>
+      </nav>
+      <div class="header-actions">
+        <button class="favorites-filter" id="favoritesFilter" type="button" aria-pressed="false" aria-label="Показать только избранное">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+          <span>Избранное</span><span class="favorite-count" id="favoriteCount">0</span>
+        </button>
+        <button class="icon-button menu-button" id="menuButton" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileNav">
+          <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav shell" id="mobileNav" aria-label="Мобильная навигация" hidden>
+      <a href="#top">Главная</a><a href="#catalog">Каталог</a><a href="#collections">Подборки</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="homeView">
+    <section class="discovery shell" aria-labelledby="pageTitle">
+      <div class="discovery-heading">
+        <p class="eyebrow">КАТАЛОГ НЕЗАВИСИМЫХ ПРОЕКТОВ</p>
+        <h1 id="pageTitle">Найди свой<br><span>следующий мир.</span></h1>
+        <p class="intro">Игры, интерактивные истории и цифровые эксперименты — от маленьких команд с большими идеями.</p>
+      </div>
+      <form class="search-form" id="searchForm" role="search">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></svg>
+        <label class="sr-only" for="searchInput">Поиск по проектам</label>
+        <input id="searchInput" type="search" autocomplete="off" placeholder="Название, жанр или ключевое слово…">
+        <kbd class="search-shortcut" aria-hidden="true">Ctrl K</kbd>
+        <button class="search-clear" id="searchClear" type="button" aria-label="Очистить поиск" hidden>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+        <button class="search-submit" type="submit">Найти</button>
+      </form>
+      <div class="quick-filters" aria-label="Быстрые фильтры">
+        <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">Все проекты</button>
+        <button class="filter-chip" type="button" data-filter="Sci-fi" aria-pressed="false">Sci-fi</button>
+        <button class="filter-chip" type="button" data-filter="Фэнтези" aria-pressed="false">Фэнтези</button>
+        <button class="filter-chip" type="button" data-filter="Мистика" aria-pressed="false">Мистика</button>
+        <button class="filter-chip" type="button" data-filter="Стратегия" aria-pressed="false">Стратегии</button>
+      </div>
+    </section>
+
+    <section class="featured shell" aria-labelledby="featuredTitle">
+      <div class="featured-art">
+        <img src="./assets/hero-echo.webp" alt="Футуристическое строение среди скал и хвойного леса" fetchpriority="high">
+        <div class="featured-art-label"><span>01</span> В ФОКУСЕ</div>
+      </div>
+      <div class="featured-info">
+        <div>
+          <p class="eyebrow accent">ВЫБОР РЕДАКЦИИ</p>
+          <h2 id="featuredTitle">ECHOES<br>OF TITAN</h2>
+          <p class="featured-description">Исследуйте руины цивилизации, верните к жизни древние механизмы и узнайте, почему небо над Титаном больше не движется.</p>
+          <ul class="tag-list" aria-label="Жанры"><li>Sci-fi</li><li>Приключение</li><li>Открытый мир</li></ul>
+        </div>
+        <div>
+          <div class="featured-stats">
+            <div><strong>94%</strong><span>положительных<br>отзывов</span></div>
+            <div><strong>12</strong><span>человек<br>в команде</span></div>
+          </div>
+          <div class="featured-actions">
+            <button class="primary-button" type="button" data-project="echo">Открыть проект
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            </button>
+            <button class="save-button" type="button" data-favorite="echo" aria-label="Добавить ECHOES OF TITAN в избранное" aria-pressed="false">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="collections shell" id="collections" aria-labelledby="collectionsTitle">
+      <div class="section-heading compact">
+        <div><p class="eyebrow">БЫСТРЫЙ МАРШРУТ</p><h2 id="collectionsTitle">По настроению</h2></div>
+        <p>Три повода остаться<br>и исследовать каталог.</p>
+      </div>
+      <div class="collection-list">
+        <button class="collection-item" type="button" data-collection="Мистика">
+          <span class="collection-index">01</span><span class="collection-copy"><strong>Туман и тайны</strong><small>Мистические истории</small></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </button>
+        <button class="collection-item" type="button" data-collection="Sci-fi">
+          <span class="collection-index">02</span><span class="collection-copy"><strong>Далёкие миры</strong><small>Будущее без границ</small></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </button>
+        <button class="collection-item" type="button" data-collection="Фэнтези">
+          <span class="collection-index">03</span><span class="collection-copy"><strong>Небесные королевства</strong><small>Фэнтези и приключения</small></span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="catalog shell" id="catalog" aria-labelledby="catalogTitle">
+      <div class="section-heading catalog-heading">
+        <div><p class="eyebrow">ПОДОБРАНО ДЛЯ ВАС</p><h2 id="catalogTitle">Все проекты <span id="resultCount">6</span></h2></div>
+        <label class="sort-control">Сортировка
+          <select id="sortSelect">
+            <option value="popular">Сначала популярные</option>
+            <option value="new">Сначала новые</option>
+            <option value="title">По алфавиту</option>
+          </select>
+        </label>
+      </div>
+      <div class="active-query" id="activeQuery" hidden>
+        <span id="activeQueryText"></span>
+        <button id="resetFiltersInline" type="button">Сбросить <span aria-hidden="true">×</span></button>
+      </div>
+      <div class="project-grid" id="projectGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4M8 11h6"/></svg>
+        <h3>Здесь пока пусто</h3><p>Попробуйте изменить запрос или выбрать другой жанр.</p>
+        <button class="secondary-button" id="resetFilters" type="button">Показать все проекты</button>
+      </div>
+      <div class="catalog-bottom">
+        <p>Не знаете, с чего начать?</p>
+        <button class="text-button" id="randomProject" type="button">Открыть случайный проект
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>
+        </button>
+      </div>
+    </section>
+    </div>
+    <section class="project-page shell" id="projectPage" aria-labelledby="projectPageTitle" hidden></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-main">
+      <div class="footer-brand">
+        <a class="brand" href="#top" aria-label="Навайбкодил — наверх">
+          <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M6 33V7h7v10h14V7h7v26h-7V24H13v9H6Z" fill="currentColor"/></svg><span>Навайбкодил</span>
+        </a>
+        <p>Место, где независимые команды<br>находят своих первых игроков.</p>
+      </div>
+      <div class="footer-nav"><p>НАВИГАЦИЯ</p><a href="#top">Главная</a><a href="#catalog">Каталог</a><a href="#collections">Подборки</a></div>
+      <div class="footer-nav"><p>ДЛЯ АВТОРОВ</p><a href="mailto:submit@navaibcodil.catalog?subject=Новый%20проект">Добавить проект</a><a href="mailto:hello@navaibcodil.catalog">Обратная связь</a></div>
+    </div>
+    <div class="shell footer-bottom">
+      <p>© 2026 Навайбкодил. Концепт каталога.</p>
+      <details class="art-credits">
+        <summary>Авторы демонстрационных обложек</summary>
+        <div><a href="https://www.creativebloq.com/3d/inspired-by-halo-this-stunning-sci-fi-landscape-is-a-real-time-render-from-unreal-engine" target="_blank" rel="noreferrer">Creative Bloq</a><a href="http://www.thewarpgames.com/andrewgubinportfolio/floating-islands" target="_blank" rel="noreferrer">Andrew Gubin</a><a href="https://www.exp-points.com/chris-mcnally-moon-shiners-cabin-stylized-environment" target="_blank" rel="noreferrer">Chris McNally</a><a href="https://www.drivethrurpg.com/en/product/378180/fantasy-art-floating-islands" target="_blank" rel="noreferrer">Lore Wise Games</a><a href="https://magnaludumcreatives.com/portfolio/2d-environments/" target="_blank" rel="noreferrer">MLC Studio</a><a href="https://80.lv/articles/creating-immersive-forest-cabin-environment-inspired-by-alan-wake-2" target="_blank" rel="noreferrer">80 Level</a></div>
+      </details>
+      <a class="to-top" href="#top">Наверх <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <dialog class="media-dialog" id="mediaDialog" aria-labelledby="mediaDialogTitle">
+    <button class="dialog-close icon-button" id="mediaDialogClose" type="button" aria-label="Закрыть скриншот">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+    </button>
+    <img id="mediaDialogImage" src="./assets/hero-echo.webp" alt="">
+    <p id="mediaDialogTitle"></p>
+  </dialog>
+  <dialog class="play-dialog" id="playDialog" aria-labelledby="playTitle">
+    <button class="dialog-close icon-button" id="playClose" type="button" aria-label="Закрыть мини-демо">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+    </button>
+    <div class="play-stage" id="playStage">
+      <img id="playImage" src="./assets/hero-echo.webp" alt="">
+      <div class="play-intro" id="playIntro">
+        <p class="eyebrow accent">БРАУЗЕРНОЕ МИНИ-ДЕМО</p>
+        <h2 id="playTitle">Поймай сигнал</h2>
+        <p>Поймайте пять световых сигналов как можно быстрее. Можно играть мышью, касанием или клавишей Enter.</p>
+        <button class="primary-button" id="startGame" type="button">Начать демо <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="game-hud" id="gameHud" hidden><span id="gameScore">Сигнал 0 / 5</span><span id="gameTimer">0,0 с</span></div>
+      <button class="signal-target" id="signalTarget" type="button" aria-label="Поймать световой сигнал" hidden><span></span></button>
+      <div class="play-result" id="playResult" hidden>
+        <p class="eyebrow accent">ДЕМО ПРОЙДЕНО</p>
+        <h2>Все сигналы найдены</h2>
+        <p id="resultTime">Ваше время: 0,0 секунды</p>
+        <button class="primary-button" id="restartGame" type="button">Сыграть ещё раз <span aria-hidden="true">↻</span></button>
+      </div>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
