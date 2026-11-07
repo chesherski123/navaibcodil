@@ -34,7 +34,7 @@ const projects = [
     genres: ['Мистика', 'Исследование'], image: './assets/moonshire.webp', team: 'Small Hours',
     alt: 'Деревянный дом с тёплым светом под большой луной',
     description: 'A quiet tale of a forest house where the light never goes out.',
-    fullDescription: 'Интерактивная новелла о возвращении в место, которого нет на картах. Днём вы восстанавливаете старый дом, а ночью разговариваете с теми, кто приходит к его свету. Никакой спешки — только детали, выборы и последствия.'
+    fullDescription: 'An interactive tale about returning to a place that no map remembers.'
   },
   {
     id: 'rift', title: 'RIFTBOUND', category: 'RPG', year: 2024, rating: 86,
