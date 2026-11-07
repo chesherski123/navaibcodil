@@ -33,7 +33,7 @@ const projects = [
     id: 'moonshire', title: 'MOONSHIRE', category: 'Интерактивная история', year: 2026, rating: 96,
     genres: ['Мистика', 'Исследование'], image: './assets/moonshire.webp', team: 'Small Hours',
     alt: 'Деревянный дом с тёплым светом под большой луной',
-    description: 'Тихая история о доме в лесу, где каждую ночь кто-то оставляет свет в окне.',
+    description: 'A quiet tale of a forest house where the light never goes out.',
     fullDescription: 'Интерактивная новелла о возвращении в место, которого нет на картах. Днём вы восстанавливаете старый дом, а ночью разговариваете с теми, кто приходит к его свету. Никакой спешки — только детали, выборы и последствия.'
   },
   {
